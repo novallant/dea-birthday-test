@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>For Dea Kumala Sari ♡</title>
+
+    <!-- FONT -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link
+        rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin
+    >
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;1,400;1,500&display=swap"
+        rel="stylesheet"
+    >
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- =========================================
+         PINK BACKGROUND
+    ========================================== -->
+
+    <div class="pink-bg bg-a"></div>
+    <div class="pink-bg bg-b"></div>
+    <div class="pink-bg bg-c"></div>
+
+    <!-- LOVE BERJALAN -->
+    <div id="floatingHearts"></div>
+
+
+    <!-- =========================================
+         COUNTDOWN
+    ========================================== -->
+
+    <section
+        id="countdownScreen"
+        class="screen"
+    >
+
+        <div class="countdown-card">
+
+            <div class="small-label">
+                A LITTLE SURPRISE
+            </div>
+
+            <div class="countdown-heart">
+                ♡
+            </div>
+
+            <h1>
+                Tunggu dulu yaa..
+            </h1>
+
+            <p>
+                Ada Sedikit Kejutan xixi <br>
+                
+            </p>
+
+
+            <div class="countdown">
+
+                <div class="time-box">
+                    <span id="days">00</span>
+                    <small>days</small>
+                </div>
+
+                <div class="colon">:</div>
+
+                <div class="time-box">
+                    <span id="hours">00</span>
+                    <small>hours</small>
+                </div>
+
+                <div class="colon">:</div>
+
+                <div class="time-box">
+                    <span id="minutes">00</span>
+                    <small>minutes</small>
+                </div>
+
+                <div class="colon">:</div>
+
+                <div class="time-box">
+                    <span id="seconds">00</span>
+                    <small>seconds</small>
+                </div>
+
+            </div>
+
+
+            <button
+                id="startButton"
+                disabled
+            >
+                🔒 Masih terkunci
+            </button>
+
+
+            <div
+                id="countdownMessage"
+                class="countdown-message"
+            >
+                tunggu sampai waktunya tiba ♡
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =========================================
+         EXPERIENCE
+    ========================================== -->
+
+    <main
+        id="experience"
+        class="hidden"
+    >
+
+
+        <!-- PROGRESS -->
+
+        <div id="progressBar">
+
+            <div id="progressText">
+                01 / 07
+            </div>
+
+            <div class="progress-track">
+                <div id="progressFill"></div>
+            </div>
+
+        </div>
+
+
+
+        <!-- ======================================
+             STEP 1
+        ======================================= -->
+
+        <section
+            id="step1"
+            class="step active"
+        >
+
+            <div class="step-label">
+                STEP 01
+            </div>
+
+            <h2>
+                Tap The Heart
+            </h2>
+
+            <p class="subtext">
+                Ada Kejutannn Sayangg ♡
+            </p>
+
+
+            <button
+                id="mainHeart"
+                class="main-heart"
+            >
+                ♡
+            </button>
+
+
+            <div class="tap-hint">
+                TAP ME
+            </div>
+
+        </section>
+
+
+
+        <!-- ======================================
+             STEP 2 : COLLECT HEARTS
+        ======================================= -->
+
+        <section
+            id="step2"
+            class="step"
+        >
+
+            <div class="step-label">
+                STEP 02
+            </div>
+
+            <h2>
+                Catch The Hearts
+            </h2>
+
+            <p class="subtext">
+                Klik Semua ♡ yang Muncul Sayangg
+            </p>
+
+
+            <div class="heart-counter">
+                <span id="heartCount">0</span>
+                / 3
+            </div>
+
+
+            <div
+                id="heartArena"
+                class="heart-arena"
+            >
+
+                <!-- HEARTS AKAN MUNCUL DI SINI -->
+
+            </div>
+
+
+            <button
+                id="heartNext"
+                class="next-btn"
+                disabled
+            >
+                lanjut →
+            </button>
+
+        </section>
+
+
+
+        <!-- ======================================
+             STEP 3 : ENVELOPE
+        ======================================= -->
+
+        <section
+            id="step3"
+            class="step"
+        >
+
+            <div class="step-label">
+                STEP 03
+            </div>
+
+            <h2>
+                Something For You
+            </h2>
+
+            <p class="subtext">
+                Buka Pelan-pelan Yaaa Bii..
+            </p>
+
+
+            <div
+                id="envelope"
+                class="envelope"
+            >
+
+                <div class="envelope-back"></div>
+
+                <div class="letter-card-inside">
+
+                    <span>
+                        ♡
+                    </span>
+
+                </div>
+
+                <div class="envelope-front"></div>
+
+                <div class="envelope-flap"></div>
+
+            </div>
+
+
+            <div class="tap-hint">
+                Klik Amplop
+            </div>
+
+        </section>
+
+
+
+        <!-- ======================================
+             STEP 4 : LETTER
+        ======================================= -->
+
+        <section
+            id="step4"
+            class="step"
+        >
+
+            <div class="step-label">
+                STEP 04
+            </div>
+
+            <div
+                id="letter"
+                class="letter"
+            >
+
+                <div class="letter-paper">
+
+                    <div class="letter-corner">
+                        ♡
+                    </div>
+
+                    <div class="letter-date">
+                        FOR YOU
+                    </div>
+
+                    <h3>
+                        Happy Birthday Sayangg ♡
+                    </h3>
+
+                    <p>
+                        SAYAANGGGGG HAPPY BIRTHDAYY YAWW  CANTIKKUUU GEMASKUU😍😍🩷🩷🫶🏻
+
+                        Semogaa panjang umur sehatt selaluu sayanggg😍🩷✨️ 
+                        semogaa semuaa yang kamuu inginkann tercapai semua dalam waktu dekatt yaww bii🥹🩷 
+                        jadi anakk yang berbakti kepada orang tua dan keluargaa🩷🩷🥹 
+                        selaluu baikk ke semua orangg yaaww bii🥹🩷✨ tambahh sayangg ke anann yawww✨🩷😍 Semogaa kamu bisaa sukses dunia dan akhiratt inii biii✨🩷🫶🏻 
+                        sudahh 2 tahun yaww samaa papann😍🩷 semogaa bisa lanjutt ke jenjang serius yaww aamiin🥹🩷🩷✨ dijagaa kesehatannya yaww sayangg✨🫶🏻🩷
+                    </p>
+
+                    <div class="letter-sign">
+                        — Anan ♡
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <button
+                id="letterNext"
+                class="next-btn"
+            >
+                Ada Lagi→
+            </button>
+
+        </section>
+
+
+
+        <!-- ======================================
+             STEP 5 : PHOTO
+        ======================================= -->
+
+        <section
+            id="step5"
+            class="step"
+        >
+
+            <div class="step-label">
+                STEP 05
+            </div>
+
+            <h2>
+                Pick a Memory
+            </h2>
+
+            <p class="subtext">
+                Sudah 23 tahun yaa sayangg..♡
+            </p>
+
+
+            <div class="photo-grid">
+
+                <div
+                    class="photo-card"
+                    data-message="I love this one ♡"
+                >
+
+                    <img
+                        src="assets/images/photo1.jpeg"
+                        alt="Photo 1"
+                    >
+
+                    <span class="photo-number">
+                        01
+                    </span>
+
+                </div>
+
+
+                <div
+                    class="photo-card"
+                    data-message="One of my favorites ♡"
+                >
+
+                    <img
+                        src="assets/images/photo2.jpeg"
+                        alt="Photo 2"
+                    >
+
+                    <span class="photo-number">
+                        02
+                    </span>
+
+                </div>
+
+
+                <div
+                    class="photo-card"
+                    data-message="A little moment to keep ♡"
+                >
+
+                    <img
+                        src="assets/images/photo3.jpeg"
+                        alt="Photo 3"
+                    >
+
+                    <span class="photo-number">
+                        03
+                    </span>
+
+                </div>
+
+            </div>
+
+
+            <div
+                id="photoMessage"
+                class="photo-message"
+            >
+            </div>
+
+
+            <button
+                id="photoNext"
+                class="next-btn"
+                disabled
+            >
+                Lihat Dulu Sayang ♡
+            </button>
+
+        </section>
+
+
+
+        <!-- ======================================
+             STEP 6 : GIFT
+        ======================================= -->
+
+        <section
+            id="step6"
+            class="step"
+        >
+
+            <div class="step-label">
+                STEP 06
+            </div>
+
+            <h2>
+                One last thing...
+            </h2>
+
+            <p class="subtext">
+                Ini Kayanya Punya Kamu Bii... ♡
+            </p>
+
+
+            <div
+                id="gift"
+                class="gift"
+            >
+
+                <div class="gift-lid">
+
+                    <div class="gift-ribbon">
+                    </div>
+
+                </div>
+
+
+                <div class="gift-body">
+
+                    <div class="gift-ribbon vertical">
+                    </div>
+
+                </div>
+
+
+                <div class="bow bow-left"></div>
+                <div class="bow bow-right"></div>
+
+            </div>
+
+
+            <button
+                id="giftButton"
+                class="next-btn"
+            >
+                Open 🎁
+            </button>
+
+        </section>
+
+
+
+        <!-- ======================================
+             STEP 7 : FINAL
+        ======================================= -->
+
+        <section
+            id="step7"
+            class="step final-step"
+        >
+
+            <div class="final-glow"></div>
+
+
+            <div class="final-content">
+
+                <div class="final-heart">
+                    ♥
+                </div>
+
+
+                <div class="step-label">
+                    FOR YOU
+                </div>
+
+
+                <h1>
+                    Happy Birthday,
+                    <em>Sayang</em> ♡
+                </h1>
+
+
+                <p>
+                    Semoga seiring bertambahnya usia<br>
+                    selalu diberikan bahagia yaa sayangg, aamiin ♡.
+                </p>
+
+
+                <div class="final-divider">
+                    ♡ ♡ ♡
+                </div>
+
+
+                <div class="final-small">
+                    love you always.
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+
+    <!-- =========================================
+         MUSIC
+    ========================================== -->
+
+    <audio
+        id="music"
+        src="assets/audio/birthday.mp3"
+        loop
+    ></audio>
+
+
+    <button id="musicButton">
+        ♪
+    </button>
+
+
+
+    <!-- =========================================
+         IMAGE LIGHTBOX
+    ========================================== -->
+
+    <div
+        id="lightbox"
+        class="lightbox"
+    >
+
+        <button
+            id="closeLightbox"
+        >
+            ×
+        </button>
+
+        <img
+            id="previewImage"
+            src=""
+            alt="Preview"
+        >
+
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
